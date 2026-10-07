@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lake to Lake Landscaping | Full-Service Landscaping in Penticton & the Okanagan</title>
+<meta name="description" content="Lake to Lake Landscaping — Penticton's full-service landscaping crew. Irrigation, landscape construction, weekly maintenance, excavation and snow & ice management. Commercial, strata and residential. Call 778-531-8308.">
+<style>
+  :root { --green:#1e5b3a; --green-d:#123f27; --stone:#8a7a63; --gold:#c9a227; --ink:#1c2420; --paper:#f8f7f3; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); line-height:1.6; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 22px; }
+
+  header { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); border-bottom:1px solid #e6e2d8; }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { font-weight:800; font-size:1.28rem; color:var(--green-d); text-decoration:none; letter-spacing:.5px; }
+  .logo span { color:var(--gold); }
+  .nav-links { display:flex; gap:26px; align-items:center; }
+  .nav-links a { text-decoration:none; color:var(--ink); font-weight:600; font-size:.95rem; }
+  .nav-links a:hover { color:var(--green); }
+  .btn { display:inline-block; background:var(--green); color:#fff !important; padding:12px 28px; border-radius:999px; font-weight:700; text-decoration:none; transition:.2s; border:none; cursor:pointer; font-size:1rem; }
+  .btn:hover { background:var(--green-d); transform:translateY(-1px); }
+  .btn.gold { background:var(--gold); color:#241a05 !important; }
+  @media(max-width:760px){ .nav-links a:not(.btn){ display:none; } }
+
+  .hero { position:relative; min-height:88vh; display:flex; align-items:flex-end; color:#fff; overflow:hidden; }
+  .hero-bg { position:absolute; inset:0; }
+  .hero-bg img { width:100%; height:100%; object-fit:cover; display:block; }
+  .hero-shade { position:absolute; inset:0; background:linear-gradient(to top, rgba(10,18,14,.82) 0%, rgba(10,18,14,.28) 50%, rgba(10,18,14,.18) 100%); }
+  .hero-inner { position:relative; padding:70px 0 80px; width:100%; }
+  .hero h1 { font-size:clamp(2.3rem,5.5vw,4rem); line-height:1.08; font-weight:800; max-width:800px; text-shadow:0 2px 20px rgba(0,0,0,.5); }
+  .hero h1 em { color:var(--gold); font-style:normal; }
+  .hero p.lead { font-size:1.18rem; max-width:660px; margin:18px 0 28px; color:#f0ede4; }
+  .hero-cta-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .phone-big { font-size:1.5rem; font-weight:800; color:#fff; text-decoration:none; }
+  .phone-big:hover { color:var(--gold); }
+  .badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .badges span { background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.35); padding:8px 16px; border-radius:999px; font-size:.88rem; font-weight:600; backdrop-filter:blur(4px); }
+
+  section { padding:76px 0; }
+  .kicker { color:var(--green); font-weight:800; text-transform:uppercase; letter-spacing:2px; font-size:.82rem; margin-bottom:10px; }
+  h2 { font-size:clamp(1.7rem,3.5vw,2.5rem); font-weight:800; margin-bottom:14px; line-height:1.2; }
+  .sec-sub { color:#55605a; max-width:700px; margin-bottom:40px; font-size:1.05rem; }
+
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px; }
+  .card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 8px 30px rgba(20,35,25,.08); border:1px solid #e8e4d8; transition:.2s; }
+  .card:hover { transform:translateY(-4px); }
+  .card img { width:100%; height:190px; object-fit:cover; display:block; }
+  .card .body { padding:24px 26px 28px; }
+  .card h3 { font-size:1.22rem; margin-bottom:8px; }
+  .card p { color:#55605a; font-size:.96rem; }
+
+  .values { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .value { background:#fff; border-radius:18px; padding:32px 28px; border:1px solid #e8e4d8; border-top:4px solid var(--gold); }
+  .value h3 { font-size:1.25rem; margin-bottom:8px; color:var(--green-d); }
+  .value p { color:#55605a; font-size:.96rem; }
+
+  blockquote { background:#fff; border-radius:18px; padding:34px 32px; border:1px solid #e8e4d8; box-shadow:0 8px 30px rgba(20,35,25,.07); font-size:1.02rem; color:#3c4742; max-width:800px; }
+  blockquote footer { margin-top:16px; font-weight:700; color:var(--ink); font-style:normal; }
+  blockquote footer small { display:block; font-weight:500; color:#6b7a70; }
+  .stars { color:var(--gold); font-size:1.1rem; letter-spacing:2px; }
+
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+  @media(max-width:820px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-card { background:#fff; border-radius:20px; padding:36px 32px; border:1px solid #e8e4d8; box-shadow:0 12px 36px rgba(20,35,25,.09); }
+  .contact-card h3 { margin-bottom:18px; }
+  .contact-line { display:flex; gap:12px; align-items:flex-start; margin-bottom:16px; font-size:1.02rem; }
+  .contact-line a { color:var(--green-d); font-weight:700; text-decoration:none; }
+  form label { display:block; font-weight:600; font-size:.9rem; margin:14px 0 6px; }
+  form input, form select, form textarea { width:100%; padding:12px 14px; border:1.5px solid #ddd8c8; border-radius:12px; font-size:1rem; font-family:inherit; }
+  form input:focus, form select:focus, form textarea:focus { outline:none; border-color:var(--green); }
+  form textarea { min-height:100px; resize:vertical; }
+  .fine { font-size:.8rem; color:#6b7a70; margin-top:12px; }
+
+  footer { background:#101a14; color:#9db3a2; padding:36px 0; font-size:.92rem; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; align-items:center; }
+  footer a { color:#fff; font-weight:700; text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">LAKE TO LAKE <span>LANDSCAPING</span></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#values">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="tel:+17785318308">778-531-8308</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-bg"><img src="photos/hero-estate.jpg" alt="Professionally landscaped Okanagan estate at golden hour"></div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-inner">
+    <h1>From routine maintenance to <em>full construction</em> — done right the first time.</h1>
+    <p class="lead">Lake to Lake Landscaping is Penticton's full-service crew: irrigation, landscape construction, weekly maintenance, excavation and winter snow &amp; ice — for homes, stratas and commercial builds.</p>
+    <div class="hero-cta-row">
+      <a class="btn gold" href="#contact">Get a Quote</a>
+      <a class="phone-big" href="tel:+17785318308">📞 778-531-8308</a>
+    </div>
+    <div class="badges">
+      <span>🏗️ Commercial &amp; strata contracts</span>
+      <span>🏡 High-end residential</span>
+      <span>📍 Penticton &amp; the Okanagan</span>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">Our Services</div>
+    <h2>Everything your property needs, one crew.</h2>
+    <p class="sec-sub">Your property is a big investment — it needs to look the part. Developers, stratas and homeowners across the Okanagan trust us to keep it in top shape, no matter the season.</p>
+    <div class="services">
+      <div class="card"><img src="photos/construction.jpg" alt="Excavator grading a landscape construction site"><div class="body"><h3>Landscape Construction</h3><p>Full builds from the ground up: grading, retaining walls, sod and artificial turf installation. New construction projects welcome.</p></div></div>
+      <div class="card"><img src="photos/irrigation.jpg" alt="Lawn sprinklers watering in the morning"><div class="body"><h3>Irrigation</h3><p>Professional irrigation installs and repairs — efficient systems that keep Okanagan lawns green through the dry summer.</p></div></div>
+      <div class="card"><img src="photos/hero-estate.jpg" alt="Manicured estate lawn and gardens"><div class="body"><h3>Landscape Maintenance</h3><p>Weekly lawn care and garden upkeep that keeps residential, strata and commercial properties sharp all season.</p></div></div>
+      <div class="card"><img src="photos/snow.jpg" alt="Snow blower clearing a driveway"><div class="body"><h3>Snow &amp; Ice Management</h3><p>Dependable snow removal all winter long — driveways, walkways, strata complexes and commercial lots.</p></div></div>
+      <div class="card"><img src="photos/construction.jpg" alt="Excavation work on site"><div class="body"><h3>Excavation</h3><p>Site prep, trenching and grading with the right equipment for the job — big or small.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="values" style="background:#fff;">
+  <div class="wrap">
+    <div class="kicker">Our Core Values</div>
+    <h2>How we work, on every job.</h2>
+    <p class="sec-sub">These guide how we work, how we communicate, and how we serve our clients across the Okanagan.</p>
+    <div class="values">
+      <div class="value"><h3>Committed</h3><p>We show up when we say we will, and we take pride in following through.</p></div>
+      <div class="value"><h3>Capable</h3><p>Our team is trained, experienced, and equipped to deliver high-quality results on every job.</p></div>
+      <div class="value"><h3>Resourceful</h3><p>Every property is different — we find solutions that fit your space, budget, and needs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kicker">Client Reviews</div>
+    <h2>What our clients are saying.</h2>
+    <div style="margin-top:28px;">
+      <blockquote><span class="stars">★★★★★</span><br>"I couldn't be more impressed with the incredible work done by Dustin and his team. From start to finish, their professionalism, attention to detail, and commitment to excellence truly stood out. They went above and beyond to ensure every aspect of the project was completed to the highest standard. Highly recommend Lake to Lake Landscaping to anyone looking for top-tier landscaping services."<footer>Shawna P.</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#eef0e8;">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Get a quote.</h2>
+    <p class="sec-sub">Tell us about the project — we'll take it from there.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <div class="contact-line">📞 <a href="tel:+17785318308">778-531-8308</a></div>
+        <div class="contact-line">✉️ <a href="mailto:dustin@laketolakelandscaping.ca">dustin@laketolakelandscaping.ca</a></div>
+        <div class="contact-line">📍 Penticton, BC — serving the Okanagan</div>
+        <div class="contact-line">🕘 Mon–Fri 7:00 AM – 5:30 PM<br>&nbsp;&nbsp;&nbsp;&nbsp;Sat 9:00 AM – 5:00 PM<br>&nbsp;&nbsp;&nbsp;&nbsp;Sun Closed</div>
+      </div>
+      <div class="contact-card">
+        <h3>Quote request</h3>
+        <form id="quoteForm">
+          <label>Name<input required name="name" placeholder="Your name"></label>
+          <label>Phone<input required name="phone" type="tel" placeholder="(250) 555-0123"></label>
+          <label>Service needed
+            <select name="service">
+              <option>Landscape Construction</option><option>Irrigation Install / Repair</option><option>Landscape Maintenance</option><option>Snow &amp; Ice Management</option><option>Excavation</option><option>Strata / Commercial Contract</option>
+            </select>
+          </label>
+          <label>Details<textarea name="details" placeholder="Tell us about the property and the project..."></textarea></label>
+          <button class="btn" type="submit" style="margin-top:16px;">Send Quote Request</button>
+          <p class="fine">Nothing is stored on this website. Sending opens an email to dustin@laketolakelandscaping.ca from your own mail app.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff;">Lake to Lake Landscaping</strong> · Penticton, BC · <a href="tel:+17785318308">778-531-8308</a></div>
+    <div>Construction · Irrigation · Maintenance · Snow &amp; Ice</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const subject = encodeURIComponent('Quote request — ' + f.get('service'));
+  const body = encodeURIComponent('Name: '+f.get('name')+'\nPhone: '+f.get('phone')+'\nService: '+f.get('service')+'\n\nDetails:\n'+f.get('details'));
+  window.location.href = 'mailto:dustin@laketolakelandscaping.ca?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
